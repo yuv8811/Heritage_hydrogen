@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="stylesheet" href="/app/styles/tailwind.css"/><link rel="stylesheet" href="/app/styles/reset.css"/><link rel="stylesheet" href="/app/styles/app.css"/><link rel="preconnect" href="https://cdn.shopify.com"/><link rel="preconnect" href="https://shop.app"/><link rel="icon" type="image/svg+xml" href="/app/assets/favicon.svg"/></head><body><div aria-modal="true" class="overlay " role="dialog"><button class="close-outside"></button><aside><header><h3>CART</h3><button class="close reset" aria-label="Close">×</button></header><main><!--$--><div class="cart-main "><div><br/><p>Looks like you haven’t added anything yet, let’s get you started!</p><br/><a href="/collections" data-discover="true">Continue shopping →</a></div><div class="cart-details"><div aria-labelledby="cart-lines"><ul></ul></div></div></div><!--/$--></main></aside></div><div aria-modal="true" class="overlay " role="dialog"><button class="close-outside"></button><aside><header><h3>SEARCH</h3><button class="close reset" aria-label="Close">×</button></header><main><div class="predictive-search"><br/><form method="get" action="/" class="predictive-search-form" data-discover="true"><input name="q" placeholder="Search" type="search" list=":R4b5:"/> <button>Search</button></form></div></main></aside></div><div aria-modal="true" class="overlay " role="dialog"><button class="close-outside"></button><aside><header><h3>MENU</h3><button class="close reset" aria-label="Close">×</button></header><main><nav class="header-menu-mobile" role="navigation"><a class="" style="color:var(--text-primary)" href="/" data-discover="true">Home</a><a class="header-menu-item" style="color:var(--text-primary)" href="/" data-discover="true">Home</a><a class="header-menu-item" style="color:var(--text-primary)" href="/collections/all" data-discover="true">Catalog</a><a class="header-menu-item" style="color:var(--text-primary)" href="/collections" data-discover="true">All collections</a><a class="header-menu-item" style="color:var(--text-primary)" href="/blogs/news" data-discover="true">News</a><a class="header-menu-item" style="color:var(--text-primary)" href="/pages/contact" data-discover="true">Contact</a></nav></main></aside></div><header class="header"><a class="" style="color:var(--text-primary)" href="/" data-discover="true"><strong>Heritage</strong></a><nav class="header-menu-desktop" role="navigation"><a class="header-menu-item" style="color:var(--text-primary)" href="/" data-discover="true">Home</a><a class="header-menu-item" style="color:var(--text-primary)" href="/collections/all" data-discover="true">Catalog</a><a class="header-menu-item" style="color:var(--text-primary)" href="/collections" data-discover="true">All collections</a><a class="header-menu-item" style="color:var(--text-primary)" href="/blogs/news" data-discover="true">News</a><a class="header-menu-item" style="color:var(--text-primary)" href="/pages/contact" data-discover="true">Contact</a></nav><nav class="header-ctas" role="navigation"><button class="header-menu-mobile-toggle reset"><h3>☰</h3></button><a class="" style="color:var(--text-primary)" href="/account" data-discover="true"><!--$-->Sign in<!-- --><!--/$--></a><button class="reset">Search</button><!--$--><a href="/cart">Cart <!-- -->0</a><!--/$--></nav></header><main><pre>{
+  &quot;nodes&quot;: [
+    {
+      &quot;title&quot;: &quot;News&quot;,
+      &quot;handle&quot;: &quot;news&quot;,
+      &quot;articles&quot;: {
+        &quot;nodes&quot;: []
+      }
+    }
+  ]
+}</pre></main><!--$--><footer class="footer"><nav class="footer-menu" role="navigation"><a class="" style="color:var(--color-light)" href="/" data-discover="true">Home page</a><a class="" style="color:var(--color-light)" href="/search" data-discover="true">Search</a><a class="" style="color:var(--color-light)" href="/collections" data-discover="true">All collections</a><a class="" style="color:var(--color-light)" href="/policies/privacy-policy" data-discover="true">Privacy Policy</a><a class="" style="color:var(--color-light)" href="/pages/data-sharing-opt-out" data-discover="true">Your privacy choices</a></nav></footer><!--/$--><script nonce="7c4893c81e4ae9882cbd098a754af916">((storageKey2, restoreKey) => {
+    if (!window.history.state || !window.history.state.key) {
+      let key = Math.random().toString(32).slice(2);
+      window.history.replaceState({ key }, "");
+    };
+    try {
+      let positions = JSON.parse(sessionStorage.getItem(storageKey2) || "{}");
+      let storedY = positions[restoreKey || window.history.state.key];
+      if (typeof storedY === "number") {
+        window.scrollTo(0, storedY);
+      }
+    } catch (error) {
+      console.error(error);
+      sessionStorage.removeItem(storageKey2);
+    }
+  })("react-router-scroll-positions", null)</script><link rel="modulepreload" href="/app/entry.client.jsx"/><link rel="modulepreload" href="/app/root.jsx"/><link rel="modulepreload" href="/app/routes/debug.jsx"/><script nonce="7c4893c81e4ae9882cbd098a754af916">window.__reactRouterContext = {"basename":"/","future":{"v8_middleware":true,"unstable_optimizeDeps":true,"unstable_splitRouteModules":true,"unstable_subResourceIntegrity":false,"unstable_viteEnvironmentApi":false},"routeDiscovery":{"mode":"lazy","manifestPath":"/__manifest"},"ssr":true,"isSpaMode":false};window.__reactRouterContext.stream = new ReadableStream({start(controller){window.__reactRouterContext.streamController = controller;}}).pipeThrough(new TextEncoderStream());</script><script nonce="7c4893c81e4ae9882cbd098a754af916" type="module" async="">import "/@id/__x00__virtual:react-router/inject-hmr-runtime";;
+import * as route0 from "/app/root.jsx";
+import * as route1 from "/app/routes/debug.jsx";
+  window.__reactRouterManifest = {
+  "version": "0.11938691192174622",
+  "url": "/@id/__x00__virtual:react-router/browser-manifest",
+  "hmr": {
+    "runtime": "/@id/__x00__virtual:react-router/inject-hmr-runtime"
+  },
+  "entry": {
+    "module": "/app/entry.client.jsx",
+    "imports": []
+  },
+  "routes": {
+    "root": {
+      "id": "root",
+      "path": "",
+      "module": "/app/root.jsx",
+      "hasAction": false,
+      "hasLoader": true,
+      "hasClientAction": false,
+      "hasClientLoader": false,
+      "hasClientMiddleware": false,
+      "hasErrorBoundary": true,
+      "imports": []
+    },
+    "routes/debug": {
+      "id": "routes/debug",
+      "parentId": "root",
+      "path": "debug",
+      "module": "/app/routes/debug.jsx",
+      "hasAction": false,
+      "hasLoader": true,
+      "hasClientAction": false,
+      "hasClientLoader": false,
+      "hasClientMiddleware": false,
+      "hasErrorBoundary": false,
+      "imports": []
+    },
+    "routes/($locale)": {
+      "id": "routes/($locale)",
+      "parentId": "root",
+      "path": ":locale?",
+      "module": "/app/routes/($locale).jsx",
+      "hasAction": false,
+      "hasLoader": true,
+      "hasClientAction": false,
+      "hasClientLoader": false,
+      "hasClientMiddleware": false,
+      "hasErrorBoundary": false,
+      "imports": []
+    },
+    "routes/($locale)._index": {
+      "id": "routes/($locale)._index",
+      "parentId": "routes/($locale)",
+      "index": true,
+      "module": "/app/routes/($locale)._index.jsx",
+      "hasAction": false,
+      "hasLoader": true,
+      "hasClientAction": false,
+      "hasClientLoader": false,
+      "hasClientMiddleware": false,
+      "hasErrorBoundary": false,
+      "imports": []
+    }
+  }
+};
+  window.__reactRouterRouteModules = {"root":route0,"routes/debug":route1};
+
+import("/app/entry.client.jsx");</script></body></html><!--$--><script nonce="7c4893c81e4ae9882cbd098a754af916">window.__reactRouterContext.streamController.enqueue("[{\"_1\":2,\"_99\":-5,\"_100\":-5},\"loaderData\",{\"_3\":4,\"_87\":88},\"root\",{\"_5\":6,\"_7\":8,\"_9\":10,\"_11\":12,\"_73\":74,\"_13\":75,\"_76\":77},\"cart\",[\"P\",6],\"isLoggedIn\",[\"P\",8],\"footer\",[\"P\",10],\"header\",{\"_13\":14,\"_27\":28},\"shop\",{\"_15\":16,\"_17\":18,\"_19\":-5,\"_20\":21,\"_24\":25},\"id\",\"gid://shopify/Shop/94521688351\",\"name\",\"Heritage\",\"description\",\"primaryDomain\",{\"_22\":23},\"url\",\"https://heritage-9963.myshopify.com\",\"brand\",{\"_26\":-5},\"logo\",\"menu\",{\"_15\":29,\"_30\":31},\"gid://shopify/Menu/297748431135\",\"items\",[32,43,50,57,65],{\"_15\":33,\"_34\":-5,\"_35\":36,\"_37\":38,\"_39\":40,\"_22\":41,\"_30\":42},\"gid://shopify/MenuItem/741251252511\",\"resourceId\",\"tags\",[],\"title\",\"Home\",\"type\",\"FRONTPAGE\",\"https://heritage-9963.myshopify.com/\",[],{\"_15\":44,\"_34\":-5,\"_35\":45,\"_37\":46,\"_39\":47,\"_22\":48,\"_30\":49},\"gid://shopify/MenuItem/741251285279\",[],\"Catalog\",\"CATALOG\",\"https://heritage-9963.myshopify.com/collections/all\",[],{\"_15\":51,\"_34\":-5,\"_35\":52,\"_37\":53,\"_39\":54,\"_22\":55,\"_30\":56},\"gid://shopify/MenuItem/741340643615\",[],\"All collections\",\"COLLECTIONS\",\"https://heritage-9963.myshopify.com/collections\",[],{\"_15\":58,\"_34\":59,\"_35\":60,\"_37\":61,\"_39\":62,\"_22\":63,\"_30\":64},\"gid://shopify/MenuItem/741340676383\",\"gid://shopify/Blog/117322645791\",[],\"News\",\"BLOG\",\"https://heritage-9963.myshopify.com/blogs/news\",[],{\"_15\":66,\"_34\":67,\"_35\":68,\"_37\":69,\"_39\":70,\"_22\":71,\"_30\":72},\"gid://shopify/MenuItem/741251318047\",\"gid://shopify/Page/152941658399\",[],\"Contact\",\"PAGE\",\"https://heritage-9963.myshopify.com/pages/contact\",[],\"publicStoreDomain\",\"mwjcjz-jw.myshopify.com\",[\"P\",75],\"consent\",{\"_78\":-7,\"_79\":80,\"_81\":82,\"_83\":84,\"_85\":86},\"checkoutDomain\",\"storefrontAccessToken\",\"a7f1747fbd6b61dfadc629733fcf7daf\",\"withPrivacyBanner\",false,\"country\",\"US\",\"language\",\"EN\",\"routes/debug\",{\"_89\":90},\"blogs\",{\"_91\":92},\"nodes\",[93],{\"_37\":61,\"_94\":95,\"_96\":97},\"handle\",\"news\",\"articles\",{\"_91\":98},[],\"actionData\",\"errors\"]\n");</script><!--$--><script nonce="7c4893c81e4ae9882cbd098a754af916">window.__reactRouterContext.streamController.enqueue("P6:-5\n");</script><!--$--><script nonce="7c4893c81e4ae9882cbd098a754af916">window.__reactRouterContext.streamController.enqueue("P8:[[\"Z\",82]]\n");</script><!--$--><script nonce="7c4893c81e4ae9882cbd098a754af916">window.__reactRouterContext.streamController.enqueue("P10:[{\"_27\":103},{\"_15\":104,\"_30\":105},\"gid://shopify/Menu/297748463903\",[106,111,118,122,130],{\"_15\":107,\"_34\":-5,\"_35\":108,\"_37\":109,\"_39\":40,\"_22\":41,\"_30\":110},\"gid://shopify/MenuItem/741456445727\",[],\"Home page\",[],{\"_15\":112,\"_34\":-5,\"_35\":113,\"_37\":114,\"_39\":115,\"_22\":116,\"_30\":117},\"gid://shopify/MenuItem/741456478495\",[],\"Search\",\"SEARCH\",\"https://heritage-9963.myshopify.com/search\",[],{\"_15\":119,\"_34\":-5,\"_35\":120,\"_37\":53,\"_39\":54,\"_22\":55,\"_30\":121},\"gid://shopify/MenuItem/741456511263\",[],[],{\"_15\":123,\"_34\":124,\"_35\":125,\"_37\":126,\"_39\":127,\"_22\":128,\"_30\":129},\"gid://shopify/MenuItem/741456544031\",\"gid://shopify/ShopPolicy/46864171295\",[],\"Privacy Policy\",\"SHOP_POLICY\",\"https://heritage-9963.myshopify.com/policies/privacy-policy\",[],{\"_15\":131,\"_34\":132,\"_35\":133,\"_37\":134,\"_39\":70,\"_22\":135,\"_30\":136},\"gid://shopify/MenuItem/741457920287\",\"gid://shopify/Page/152996839711\",[],\"Your privacy choices\",\"https://heritage-9963.myshopify.com/pages/data-sharing-opt-out\",[]]\n");</script><!--$--><script nonce="7c4893c81e4ae9882cbd098a754af916">window.__reactRouterContext.streamController.enqueue("P75:[{\"_138\":16,\"_139\":86,\"_140\":141,\"_142\":143},\"shopId\",\"acceptedLanguage\",\"currency\",\"USD\",\"hydrogenSubchannelId\",\"1000069546\"]\n");</script><!--$--><script nonce="7c4893c81e4ae9882cbd098a754af916">window.__reactRouterContext.streamController.close();</script><!--/$--><!--/$--><!--/$--><!--/$--><!--/$--><!--/$-->

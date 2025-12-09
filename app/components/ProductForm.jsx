@@ -1,6 +1,6 @@
-import {Link, useNavigate} from 'react-router';
-import {AddToCartButton} from './AddToCartButton';
-import {useAside} from './Aside';
+import { Link, useNavigate } from 'react-router';
+import { AddToCartButton } from './AddToCartButton';
+import { useAside } from './Aside';
 
 /**
  * @param {{
@@ -8,9 +8,9 @@ import {useAside} from './Aside';
  *   selectedVariant: ProductFragment['selectedOrFirstAvailableVariant'];
  * }}
  */
-export function ProductForm({productOptions, selectedVariant}) {
+export function ProductForm({ productOptions, selectedVariant }) {
   const navigate = useNavigate();
-  const {open} = useAside();
+  const { open } = useAside();
   return (
     <div className="product-form">
       {productOptions.map((option) => {
@@ -40,18 +40,12 @@ export function ProductForm({productOptions, selectedVariant}) {
                   // as an anchor tag
                   return (
                     <Link
-                      className="product-options-item"
+                      className={`product-options-item${selected ? ' selected' : ''}`}
                       key={option.name + name}
                       prefetch="intent"
                       preventScrollReset
                       replace
                       to={`/products/${handle}?${variantUriQuery}`}
-                      style={{
-                        border: selected
-                          ? '1px solid black'
-                          : '1px solid transparent',
-                        opacity: available ? 1 : 0.3,
-                      }}
                     >
                       <ProductOptionSwatch swatch={swatch} name={name} />
                     </Link>
@@ -65,16 +59,9 @@ export function ProductForm({productOptions, selectedVariant}) {
                   return (
                     <button
                       type="button"
-                      className={`product-options-item${
-                        exists && !selected ? ' link' : ''
-                      }`}
+                      className={`product-options-item${exists && !selected ? ' link' : ''
+                        }${selected ? ' selected' : ''}`}
                       key={option.name + name}
-                      style={{
-                        border: selected
-                          ? '1px solid black'
-                          : '1px solid transparent',
-                        opacity: available ? 1 : 0.3,
-                      }}
                       disabled={!exists}
                       onClick={() => {
                         if (!selected) {
@@ -103,14 +90,15 @@ export function ProductForm({productOptions, selectedVariant}) {
         lines={
           selectedVariant
             ? [
-                {
-                  merchandiseId: selectedVariant.id,
-                  quantity: 1,
-                  selectedVariant,
-                },
-              ]
+              {
+                merchandiseId: selectedVariant.id,
+                quantity: 1,
+                selectedVariant,
+              },
+            ]
             : []
         }
+        className="btn width-full"
       >
         {selectedVariant?.availableForSale ? 'Add to cart' : 'Sold out'}
       </AddToCartButton>
@@ -124,7 +112,7 @@ export function ProductForm({productOptions, selectedVariant}) {
  *   name: string;
  * }}
  */
-function ProductOptionSwatch({swatch, name}) {
+function ProductOptionSwatch({ swatch, name }) {
   const image = swatch?.image?.previewImage?.url;
   const color = swatch?.color;
 
